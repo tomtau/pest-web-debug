@@ -9,13 +9,16 @@ on:
       - '**.png'
       - '**cd.yml'
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@master
         with:
           toolchain: stable
@@ -27,7 +30,7 @@ jobs:
       - name: Build
         run: trunk build --release
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
