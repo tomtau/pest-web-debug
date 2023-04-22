@@ -1,0 +1,23 @@
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+  font-family: "Press Start 2P";
+}
+textarea {
+  font-family: "Fira Code";
+}
+.half {
+  width: 30%;
+  float: left;
+  margin: 20px;
+}
+
+.indent,
+.sequencespace {
+  margin: 10px;
+  width: 100px;
+  float: left;
+}
