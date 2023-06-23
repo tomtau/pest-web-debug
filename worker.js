@@ -206,7 +206,7 @@ function makeClosure(arg0, arg1, dtor, f) {
     return real;
 }
 function __wbg_adapter_14(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__Fn__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__hb3c0e7fb7844a784(arg0, arg1, addHeapObject(arg2));
+    wasm._dyn_core__ops__function__Fn__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h94ac6aab71b48b43(arg0, arg1, addHeapObject(arg2));
 }
 
 function handleError(f, args) {
@@ -332,7 +332,7 @@ function getImports() {
         const ret = wasm.memory;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper31 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper30 = function(arg0, arg1, arg2) {
         const ret = makeClosure(arg0, arg1, 3, __wbg_adapter_14);
         return addHeapObject(ret);
     };
